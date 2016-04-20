@@ -1,3 +1,7 @@
+# coding=utf-8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 from flask import Flask, render_template, url_for, redirect, jsonify, request, g, session, flash
 from cesi import Config, Connection, Node, CONFIG_FILE, ProcessInfo, JsonValue
 from datetime import datetime
